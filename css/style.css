@@ -279,3 +279,105 @@ body {
 .review-author {
   color: #989898; 
 }
+
+.h2-buitnow {
+  width: 100%;
+}
+
+/* на safari/windows не работает flex-wrap.решение не нашла */
+.buyitnow-sect {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-box-align:flex-end; 
+  -moz-box-align:flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.price-sect {
+  width: 300px;
+  border: solid 2px #445162;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+  margin: 0 45px 0 0;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #445161;
+  font-size: 14px;
+}
+
+.price-sect:last-child {
+  margin-right: 0;
+}
+
+.price-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding: 17px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.price-sum {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 18px;
+  color: #445161;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 40px;
+}
+
+.price-ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 20px; 
+}
+
+.price-ol-li{
+  margin: 0 0 5px 0;
+}
+
+.price-ol-li:last-child{
+  margin-bottom: 0;
+}
+
+.price-btn {
+  display: block;
+  width: 260px;
+  padding: 13px 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  outline: none;
+  color: #445161;
+  word-break: break-all;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price-btn:hover {
+  background-color: #445161;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.price-btn:active {
+  background-color: #fff;
+  color: #445161;
+  opacity: 0.8;
+}
