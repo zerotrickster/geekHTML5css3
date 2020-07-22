@@ -214,9 +214,27 @@ body {
   padding: 50px;
   box-sizing: border-box;
 }
+
+.reviews-h2{
+  margin-bottom: 35px;
+}
+
 .review-wrp {
-  margin:0 24px 0 32px;
-  width: 50%; 
+  display: inline-block;
+  margin:0 ;
+  width: 49%; 
+  box-sizing: border-box;
+  float: left;
+  margin: 0 23px 24px 0;
+}
+
+.review-wrp:nth-child(2n+3) {
+	float: right;
+	margin-right: 0;
+}
+
+.review-wrp:nth-child(n+4){
+	margin-bottom: 0;
 }
 
 .avatar {
@@ -230,11 +248,12 @@ body {
 
 
 .review-block {
-  float: right;
+  /*float: right;*/
+  display: inline-block;
   font-size: 14px;
   line-height: 1.29;
   background-color: #ebebeb;
-  width: 483px;
+  width: 470px;
   min-height: 121px;
   border-radius: 10px; 
   padding: 16px 20px;
@@ -246,10 +265,10 @@ body {
 .review-block:before{
   content: '';
   position: absolute;
-  left: -36px;
-  top: 30px;
-  border: 18px solid transparent;
-  border-right: 18px solid #ebebeb;
+  left: -24px;
+  top: 26px;
+  border: 12px solid transparent;
+  border-right: 12px solid #ebebeb;
 }
 
 .review-text {
